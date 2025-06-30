@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather Father</title>
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -17,9 +17,9 @@
     </header>
     <hr>
     <section class="searching">
-        <div class="input-container">
-            <input type="text" value="Ludhiana" id="city-input" placeholder="Enter city name e.g: Ludhiana, New Delhi" list="cities">
-            <button type="button" onclick="getWeather(document.getElementById('city-input').value)" id="submit-city"> Search</button>
+        <div class="search-container">
+                <input type="text" value="Ludhiana" id="city-input" placeholder="Enter city name e.g: Ludhiana, New Delhi" list="cities">
+                <button type="button" onclick="getWeather(document.getElementById('city-input').value)" id="submit-city"> Search</button>
         </div>
     </section>
     <section class="weather-container">
