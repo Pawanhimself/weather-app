@@ -95,6 +95,8 @@ th {
 
 .search-container {
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 @media only screen and (max-width: 480px) {
