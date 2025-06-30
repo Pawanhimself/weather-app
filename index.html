@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="atmospheric-conditions.png" alt="weather-father">
+            <h2> 
+                Weather Father
+            </h2>
+        </div>
+    </header>
+    <hr>
+    <section class="searching">
+        <div class="input-container">
+            <input type="text" value="Ludhiana" id="city-input" placeholder="Enter city name e.g: Ludhiana, New Delhi" list="cities">
+            <button type="button" onclick="getWeather(document.getElementById('city-input').value)" id="submit-city"> Search</button>
+        </div>
+    </section>
+    <section class="weather-container">
+        <div class="weather-report">
+            <div>
+                <h2 id="cityName"></h2> <h3 id="weather-description"></h3>
+            </div>
+            <hr>
+            <div class="weather-card">
+                <div class="tempreture">
+                    <div>
+                        <h1> <span><img src="" id="weather-icon" alt=""></span><span id="temp">30</span><sup>o</sup>C</h1>
+                    </div>
+                </div>
+                <div class="other-weather-info">
+                    <table cellspacing="30">
+                        <tr>
+                            <th>Feels like</th>
+                            <th><span id="feels_like">35</span><sup>o</sup>C</th>
+                        </tr>
+                        <tr>
+                            <th>Pressure</th>
+                            <th><span id="pressure"></span><span> hPa</span></th>
+                        </tr>
+                        <tr>
+                            <th>Humidity</th>
+                            <th><span id="humidity"></span><span>%</span></th>
+                        </tr>
+                        <tr>
+                            <th>Wind Speed</th>
+                            <th><span id="wind-speed"></span><span>km/h</span></th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button id="refresh-btn" onclick="getWeather(document.getElementById('city-input').value)" >Refresh Weather Report</button>
+        </div>
+    </section>
+
+    <script src="weather.js"></script>    
+</body>
+</html>
